@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/gallery.css">
+    <link rel="stylesheet" href="style/adaptive.css">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__block">
+            <div class="container">
+                <div class="header__flexbox">
+                    <a href="home.html" class="header__logo">
+                        <h1 class="black">
+                            Mountains
+                        </h1>
+                    </a>
+                    <div class="header__box">
+                        <a href="home.html" class="black text">главная</a>
+                        <a href="info.html" class="black text">туры</a>
+                        <a href="contacts.html" class="black text">контакты</a>
+                        <a href="gallery.html" class="black text">галерея</a>
+                        <a href="blog.html" class="black text">блог</a>
+                    </div>
+                    <button class="header__burger"></button>
+                </div>
+            </div>
+        </div>
+        <div class="header__menu-mobile">
+            <ul class="header__menu-list">
+                <li class="header__menu-li">
+                    <a class="header__menu-link close__menu text">закрыть</a>
+                </li>
+                <li class="header__menu-li">
+                    <a href="home.html" class="header__link text">главная</a>
+                </li>
+                <li class="header__menu-li">
+                    <a href="info.html" class="header__link text">туры</a>
+                </li>
+                <li class="header__menu-li">
+                    <a href="contacts.html" class="header__link text">контакты</a>
+                </li>
+                <li class="header__menu-li">
+                    <a href="gallery.html" class="header__link text">галерея</a>
+                </li>
+                <li class="header__menu-li">
+                    <a href="blog.html" class="header__link text">блог</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <section class="gallery">
+        <div class="container">
+            <h2 class="gallery__title">
+                Галерея
+            </h2>
+            <?php
+                the_content();
+            ?>
+        </div>
+    </section>
+    <section class="faq">
+        <div class="container">
+            <h2 class="faq__title">
+                FAQ
+            </h2>
+            <h3 class="faq__subtitle">
+            Частые вопросы
+            </h3>
+            <div class="faq__block">
+                <div class="faq__box">
+                    <h4 class="faq__boxtitle">
+                        Есть ли у вас специальные предложения?
+                    </h4>
+                    <p class="faq__text text">
+                    Конечно, мы рады предложить скидки на определенные пакеты и бесплатную организацию туров.
+                    </p>
+                </div>
+                <div class="faq__box">
+                    <h4 class="faq__boxtitle">
+                        Какие способы оплаты вы принимаете?
+                    </h4>
+                    <p class="faq__text text">
+                        Мы принимаем все основные кредитные карты, PayPal и Apple Pay.
+                    </p>
+                    <h4 class="faq__boxtitle">
+                    Сколько времени требуется для оформления тура?
+                    </h4>
+                    <p class="faq__text text">
+                        Обычно в течение 3-5 рабочих дней.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <?php
+        get_footer();
+    ?>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/menu.js"></script>
+</body>
+</html>
