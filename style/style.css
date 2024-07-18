@@ -36,15 +36,21 @@ a {
     margin-left: auto;
     margin-right: auto;
 }
+.header__shadow {
+    background-color: #0000006c;
+    backdrop-filter: blur(0px);
+    height: 100%;
+    padding-top: 100px;
+    padding-bottom: 127px;
+}
 .header__container {
     background-image: url("../images/background.png");
+
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 100px;
-    padding-bottom: 100px;
 }
 .header__block {
     padding-left: 10px;
@@ -82,8 +88,8 @@ a {
     color: #000000;
     background-color: rgb(255, 255, 255);
     padding: 10px 20px;
-    border-radius: 2px;
     transition: 500ms;
+    font-weight: 400;
     display: block;
     max-width: 200px;
 }
@@ -122,6 +128,79 @@ a {
     font-style: normal;
     font-size: small;
 }
+.banner__box1 {
+    background-image: url("../images/banner/1.jpg");
+}
+.banner__box2 {
+    background-image: url("../images/banner/2.jpg");
+}
+.banner__box3 {
+    background-image: url("../images/banner/3.avif");
+}
+.banner__box4 {
+    background-image: url("../images/banner/4.jpg");
+}
+.banner__box:first-child {
+    width: 900px;
+}
+.banner__box-shadow {
+    height: 100%;
+    width: 100%;
+    background-color: #0000006c;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.banner__box-title {
+    margin-top: 0;
+    padding: 0;
+    text-align: center;
+    color: #FFF;
+    font-size: 70px;
+    position: absolute;
+    font-weight: 100;
+    transition: 500ms;
+}
+#title__1 {
+    opacity: 1;
+}
+#title__2 , #title__3 , #title__4 {
+    opacity: 0;
+}
+.banner__block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.banner__item-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.banner__title {
+    position: absolute;
+    z-index: 1;
+    top: -15%;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-size: 65px;
+    letter-spacing: 10px;
+    font-style: normal;
+}
+.banner__box {
+    height: 550px;
+    
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 200px;
+    transition: 800ms;
+}
 .images__box {
     display: flex;
     justify-content: space-between;
@@ -144,7 +223,7 @@ a {
     transform: scale(1.2);
 }
 .abouttoy {
-    background-image: url("../images/gradient.jpg");
+    background-image: url("../images/sky.avif");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -241,46 +320,64 @@ a {
 .slick-next {
     right: -20px;
 }
-
-
-
-
-.itc-slider__items {
-    counter-reset: slide;
-  }
-
-  .itc-slider__item {
-    flex: 0 0 100%;
-    max-width: 100%;
-    counter-increment: slide;
-    height: 250px;
-    position: relative;
-  }
-
-  .itc-slider__item::before {
-    content: counter(slide) "/5";
-    position: absolute;
-    top: 10px;
-    right: 20px;
-    color: #fff;
-    font-style: italic;
-    font-size: 32px;
-    font-weight: bold;
+.blog {
+    margin-bottom: 100px;
+}
+.blog__item-link {
+    max-width: 700px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.blog__title {
+    margin-bottom: 40px;
+    text-align: center;
+}
+.blog__box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.blog__title-post {
+    color: #000;
+    font-weight: 400;
+    font-size: 18px;
+}
+.blog__img {
+    width: 100%;
     display: block;
-  }
+    height: 400px;
+}
+.blog__category {
+    display: block;
+    text-align: left;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    
+    color: #2e2e2e;
+    font-size: 15px;
+    font-weight: 600;
+}
+.blog__date {
+    color: #959595;
+}
+.horrisontall__line {
+    max-width: 100%;
+    border: 1px solid #d3d3d3;
+    margin-top: 100px;
+}
+.brands__block {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 100px;
+    flex-wrap: wrap;
+}
+.brands__logo {
+    margin-bottom: 20px;
+}
+.link-body-emphasis {
+    color: #000;
+}
 
-  .itc-slider__item:nth-child(1) {
-    background-image: url("../images/1.jpg");
-  }
 
-  .itc-slider__item:nth-child(2) {
-    background-image: url("../images/2.jpg");
-  }
 
-  .itc-slider__item:nth-child(3) {
-    background-image: url("../images/3.jpg");
-  }
-
-  .itc-slider__item:nth-child(4) {
-    background-image: url("../images/4.jpeg");
-  }

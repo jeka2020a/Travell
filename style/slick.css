@@ -58,17 +58,12 @@
     margin-left: auto;
     margin-right: auto;
 }
-.slick-track:before
-{
-    display: table;
-
-    content: '<';
-}
+.slick-track:before,
 .slick-track:after
 {
     display: table;
 
-    content: '>';
+    content: '';
 }
 .slick-track:after
 {
